@@ -1,0 +1,12 @@
+.tts-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+select, button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
