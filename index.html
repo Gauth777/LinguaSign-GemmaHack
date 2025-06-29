@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<!--
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LinguaSign - TTS Demo</title>
-  <link rel="stylesheet" href="style.css"> <!-- optional -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -22,6 +23,64 @@
     <button id="speakBtn">Speak</button>
   </div>
 
+  <script src="script.js"></script>
+</body>
+</html>
+-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinguaSign</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">LinguaSign</div>
+    <ul class="nav-links">
+      <li><a href="#simulate">Simulate</a></li>
+      <li><a href="#live">Live</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Bridge the Silence</h1>
+      <p>Empowering communication through sign and AI</p>
+    </div>
+    <div class="hero-illustration">
+      <img src="avatar.svg" alt="Animated Sign Avatar" />
+    </div>
+  </section>
+
+  <section class="simulate" id="simulate">
+    <h2>Simulated Sign Speaker</h2>
+    <div class="button-row">
+      <button>Hello</button>
+      <button>How are you?</button>
+      <button>Thank You</button>
+    </div>
+  </section>
+
+  <section class="live" id="live">
+    <h2>Real-Time Sign Detection</h2>
+    <div class="camera-container">
+      <video autoplay id="webcam"></video>
+      <div class="output-box">Interpreted output here...</div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>Why LinguaSign?</h2>
+    <p>We aim to make sign language accessible, understandable, and empowering for everyone.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LinguaSign | Built for Gemma 3n Impact Challenge</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
