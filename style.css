@@ -1,16 +1,4 @@
-/*.tts-container {
-  text-align: center;
-  margin-top: 100px;
-}
-
-select, button {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-*/
+/* General Resets */
 * {
   margin: 0;
   padding: 0;
@@ -81,7 +69,51 @@ body {
   height: auto;
 }
 
-/* Simulate Section */
+/* 🎙️ Record Section */
+.record-section {
+  padding: 60px 10%;
+  background: #1e1e3f;
+  text-align: center;
+}
+
+.record-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #8fe136;
+}
+
+.record-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #00bcd4;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.record-btn:hover {
+  background-color: #0198a4;
+}
+
+/* 🧍‍♂️ Sign Avatar Section */
+.sign-avatar-section {
+  padding: 60px 10%;
+  background: linear-gradient(to bottom, #302b63 0%, #0b0924 100%);
+  text-align: center;
+}
+
+.sign-avatar {
+  margin-bottom: 40px;
+}
+
+.sign-avatar img {
+  width: 250px;
+  height: auto;
+}
+
+/* 🤖 Simulated Sign Speaker */
 .simulate {
   text-align: center;
   padding: 60px 10%;
@@ -116,12 +148,17 @@ body {
   background-color: #7abb31;
 }
 
-/* Live Section */
+/* 🎥 Live Section */
 .live {
   padding: 60px 10%;
   background: #0b0924;
   text-align: center;
 }
+
+.camera-view video {
+  margin-top: 20px;
+}
+
 
 .camera-container {
   display: flex;
@@ -153,7 +190,20 @@ body {
   font-weight: bold;
 }
 
-/* About Section */
+/* 🧠 Gemma Reply */
+.gemma-reply {
+  background: #d4eaff;
+  color: #0b0924;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 📖 About Section */
 .about {
   padding: 60px 10%;
   background-color: #1e1e3f;
@@ -173,7 +223,7 @@ body {
   color: #ddd;
 }
 
-/* Footer */
+/* 📌 Footer */
 footer {
   text-align: center;
   padding: 20px;

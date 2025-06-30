@@ -12,3 +12,19 @@ if ('speechSynthesis' in window) {
 } else {
   alert('Sorry, your browser does not support speech synthesis.');
 }
+
+
+  const video = document.getElementById('webcam');
+
+  async function setupCamera() {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: true,
+        audio: false
+      });
+      video.srcObject = stream;
+    } catch (error) {
+      console.error('Error accessing webcam:', error);
+      alert('Could not access the webcam. Please allow camera permission.');
+    }
+  }

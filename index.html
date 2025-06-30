@@ -33,35 +33,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LinguaSign</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" >
 </head>
-
 <body>
   <nav class="navbar">
     <div class="logo">LinguaSign</div>
     <ul class="nav-links">
+      <li><a href="#record">Record</a></li>
       <li><a href="#simulate">Simulate</a></li>
       <li><a href="#live">Live</a></li>
       <li><a href="#about">About</a></li>
     </ul>
   </nav>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Bridge the Silence</h1>
-      <p>Empowering communication through sign and AI</p>
+  <section class="record-section" id="record">
+    <div class="record-subtitle">
+      <h2>Start Recording Your Sign</h2>
+      <button class="record-btn" onclick="setupCamera()">🎥 Start Camera</button>
     </div>
-    <div class="hero-illustration">
-      <img src="avatar.svg" alt="Animated Sign Avatar" />
+    <div class="camera-view">
+      <video id="webcam" autoplay playsinline></video>
     </div>
   </section>
 
-  <section class="simulate" id="simulate">
-    <h2>Simulated Sign Speaker</h2>
-    <div class="button-row">
-      <button>Hello</button>
-      <button>How are you?</button>
-      <button>Thank You</button>
+
+  <section class="hero">
+    <div class="hero-illustration">
+      <img src="avatar.svg" alt="Animated Sign Avatar" />
+    </div>
+    <div class="simulate-inline" id="simulate">
+      <h2>Simulated Sign Speaker</h2>
+      <div class="button-row">
+        <button>Hello</button>
+        <button>How are you?</button>
+        <button>Thank You</button>
+      </div>
     </div>
   </section>
 
@@ -70,6 +76,10 @@
     <div class="camera-container">
       <video autoplay id="webcam"></video>
       <div class="output-box">Interpreted output here...</div>
+    </div>
+    <div class="gemma-reply">
+      <h3>Gemma's Reply</h3>
+      <div class="reply-box">Gemma will respond here...</div>
     </div>
   </section>
 
