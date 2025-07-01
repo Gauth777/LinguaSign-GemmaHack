@@ -47,14 +47,37 @@
   </nav>
 
   <section class="record-section" id="record">
-    <div class="record-subtitle">
-      <h2>Start Recording Your Sign</h2>
-      <button class="record-btn" onclick="setupCamera()">🎥 Start Camera</button>
-    </div>
-    <div class="camera-view">
-      <video id="webcam" autoplay playsinline></video>
+  <div class="record-subtitle">
+    <h2>Start Recording Your Sign</h2>
+    <button class="record-btn" onclick="setupCamera()">🎥 Start Camera</button>
+  </div>
+
+  <section class="live" id="live">
+    <div class="chat-layout">
+
+      <!-- Webcam View -->
+      <div class="camera-view">
+        <video id="webcam" autoplay playsinline></video>
+      </div>
+
+      <!-- Simulated Chat Template -->
+      <div class="chat-box chat-box-template" id="templatePreview">
+        <div class="message-template user">
+          <p><strong>You:</strong> Hello</p>
+        </div>
+        <div class="message-template gemma">
+          <p><strong>Gemma:</strong> Hi there! How can I assist you today?</p>
+        </div>
+      </div>
+
+      <!-- Call-To-Action (Appears after animation ends) -->
+      <div class="cta-zoom" id="ctaMessage">
+        👋 Try it now — record your sign!
+      </div>
+
     </div>
   </section>
+
 
 
   <section class="hero">

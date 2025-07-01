@@ -28,3 +28,28 @@ if ('speechSynthesis' in window) {
       alert('Could not access the webcam. Please allow camera permission.');
     }
   }
+
+  const userMsg = document.querySelector(".message-template.user");
+  const gemmaMsg = document.querySelector(".message-template.gemma");
+  const chatBox = document.getElementById("templatePreview");
+  const cta = document.getElementById("ctaMessage");
+
+  // Show messages
+  setTimeout(() => {
+    userMsg.style.opacity = 1;
+  }, 500);
+
+  setTimeout(() => {
+    gemmaMsg.style.opacity = 1;
+  }, 1500);
+
+  // Hide chat template and show CTA
+  setTimeout(() => {
+    chatBox.style.transition = "opacity 0.5s ease";
+    chatBox.style.opacity = 0;
+  }, 3000);
+
+  setTimeout(() => {
+    chatBox.style.display = "none";
+    cta.style.display = "block";
+  }, 3600);
